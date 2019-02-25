@@ -25,6 +25,7 @@ from email.utils import formataddr
 # 时间模块，用于延迟
 import time
 # 下载图片模块
+from typing import Any
 from urllib.request import urlretrieve
 # TF_CPP_MIN_LOG_LEVEL默认值为 0 (显示所有logs)
 # 设置为 1 隐藏 INFO logs, 2 额外隐藏WARNING logs
@@ -63,9 +64,12 @@ info = [{
         'password': '136574',
         'email': '1763992358@qq.com'
         }]
-
-String1 = [[]] * len(info)
-String2 = [[]] * len(info)
+# String1为原始成绩,String2为最新成绩。创建方式为这样append防止默认copy（以免浅拷贝）
+String1 = [[] for copy in range(len(info))]
+String2 = [[] for copy in range(len(info))]
+# 训练集所有图片list与
+all_images = os.listdir(VERIFICATION_CODE_TRAINING_PATH)
+all_images_size = len(all_images)
 
 
 # 下载验证码图片安装序号存储图片
@@ -130,8 +134,9 @@ def pytesseract_devide_verification_code():
 # 获取验证码名字和图片（训练数据集）
 def get_name_and_image():
     # 获取数据集下的所有图片的数组all_images
-    all_images = os.listdir(VERIFICATION_CODE_TRAINING_PATH)
-    random_image = random.randint(0, VERIFICATION_CODE_NUMBER)
+    # all_images = os.listdir(VERIFICATION_CODE_TRAINING_PATH)
+    random_image = random.randint(0, all_images_size - 1)
+    # print (all_images_size)
     base = os.path.basename(VERIFICATION_CODE_TRAINING_PATH + all_images[random_image])  # 有扩展名
     name = os.path.splitext(base)[0]  # 无扩展名
     image = Image.open(VERIFICATION_CODE_TRAINING_PATH + all_images[random_image])
@@ -247,12 +252,12 @@ def train_crack_captcha_cnn():
         sess.run(tf.global_variables_initializer())
         step = 0
         while True:
-            batch_x, batch_y = get_next_batch(64)
-            _, loss_ = sess.run([optimizer, loss], feed_dict={X: batch_x, Y: batch_y, keep_prob: 0.3})
+            batch_x, batch_y = get_next_batch(256)
+            _, loss_ = sess.run([optimizer, loss], feed_dict={X: batch_x, Y: batch_y, keep_prob: 0.2})
             print(step, loss_)
             # 每100 step计算一次准确率
-            if step % 100 == 0:
-                batch_x_test, batch_y_test = get_next_batch(100)
+            if step % 1000 == 0:
+                batch_x_test, batch_y_test = get_next_batch(1000)
                 acc = sess.run(accuracy, feed_dict={X: batch_x_test, Y: batch_y_test, keep_prob: 1.})
                 print(step, acc)
                 # 如果准确率大于99%,保存模型,完成训练
@@ -343,7 +348,6 @@ def captcha():
                                 String1[users_number].append(ss)
                             else:
                                 String2[users_number].append(ss)
-                            # print(ss)
                         # 发送邮件
                         my_user = '%s' % information['email']
                         sss = "".join(list(set(String2[users_number]).difference(set(String1[users_number]))))  # b中有而a中没有的
@@ -353,8 +357,8 @@ def captcha():
 
                             try:
                                 msg = MIMEText(text, 'plain', 'utf-8')
-                                msg['From'] = formataddr(["发件人昵称:", SENDER])  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
-                                msg['To'] = formataddr(["收件人昵称:", my_user])  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
+                                msg['From'] = formataddr(["weijiajin", SENDER])  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
+                                msg['To'] = formataddr(["亲～:", my_user])  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
                                 msg['Subject'] = "全部成绩！好好学习！"  # 邮件的主题，也可以说是标题
                                 server = smtplib.SMTP_SSL("smtp.qq.com", 465)  # 发件人邮箱中的SMTP服务器，端口是465
                                 server.login(SENDER, PASSWORD)  # 括号中对应的是发件人邮箱账号、邮箱密码
@@ -379,9 +383,9 @@ def captcha():
                             title = "".join(list(set(String2[users_number]).difference(set(String1[users_number]))))
                             try:
                                 msg = MIMEText(text, 'plain', 'utf-8')
-                                msg['From'] = formataddr(["发件人昵称:", SENDER])  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
-                                msg['To'] = formataddr(["收件人昵称:", my_user])  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
-                                msg['Subject'] = "最新成绩" + title  # 邮件的主题，也可以说是标题
+                                msg['From'] = formataddr(["weijiajin", SENDER])  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
+                                msg['To'] = formataddr(["亲～", my_user])  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
+                                msg['Subject'] = "最新成绩出来啦～" + title  # 邮件的主题，也可以说是标题
                                 server = smtplib.SMTP_SSL("smtp.qq.com", 465)  # 发件人邮箱中的SMTP服务器，端口是465
                                 server.login(SENDER, my_pass)  # 括号中对应的是发件人邮箱账号、邮箱密码
                                 server.sendmail(SENDER, [my_user, ], msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
@@ -398,13 +402,58 @@ def captcha():
                             String2[users_number].clear()
                             users_number = + 1
                             break
-
-
-                        # time.sleep(300)
+                        time.sleep(300)
                     else:
                         print("校验码错误！重新尝试中......")
 
-
             first_time = False
 
-captcha()
+
+# captcha()
+
+
+def auto_download_train_images():
+    output = crack_captcha_cnn()
+    saver = tf.train.Saver()
+    with tf.Session() as sess:
+        saver.restore(sess, tf.train.latest_checkpoint('.'))
+        times1 = 0
+        times2 = 0
+
+        while True:
+            session = requests.Session()
+            headers = {"User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0"}
+            html = session.get(IMAGE_URL, headers=headers).content
+            with open('./test_captcha/test.png', 'wb') as file:
+                file.write(html)
+            img = Image.open('./test_captcha/test.png').convert('L')
+            # 二值化
+            img = img.point(lambda x: 255 if x > 173 else 0)
+            img1 = np.array(img)
+            img1 = 1 * (img1.flatten())
+            predict = tf.argmax(tf.reshape(output, [-1, MAX_CAPTCHA, CHAR_SET_LEN]), 2)
+            text_list = sess.run(predict, feed_dict={X: [img1], keep_prob: 1})
+            vec = text_list[0].tolist()
+            # print("预测:", vec2name(vec))
+            session.get('http://jwfw1.sdjzu.edu.cn/ssfw/login.jsp')
+            data = {'j_username': '201611101122', 'j_password': '174519',
+                    'validateCode': vec2name(vec)}
+            r = session.post('http://jwfw1.sdjzu.edu.cn/ssfw/j_spring_ids_security_check', data=data, headers=headers)
+            if (re.search(r'校验码错误', r.text, re.I | re.M)) is None:
+                # print("验证码正确通过！")
+                # print(times1)
+                image_name = '{image_name}.png'
+                img.save(os.path.join('./verification_code_training_images/', image_name.format(image_name=vec2name(vec))))
+                times1 = times1 + 1
+            else:
+                # print("校验码错误！")
+                # print(times2)
+                image_name = '{image_name}.png'
+                img.save(os.path.join('./error_images/', image_name.format(image_name=vec2name(vec))))
+                times2 = times2 + 1
+            rate = times1/(times2+times1)
+            print("总次数:%s"%(times2+times1)+"正确率：%s"%rate)
+
+
+# auto_download_train_images()
+

@@ -9,7 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/$.coverage" NAME="山东建筑大学教务处验证码 Coverage Results" MODIFIED="1550863876781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="山东建筑大学教务处验证码 Coverage Results" MODIFIED="1551064518288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -29,50 +29,41 @@
     <session id="-65273744">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.0" value="4" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="124" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="9" />
+          <entry key="Image" value="190" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="6490" />
+          <entry key="Python" value="7121" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1067">
-              <caret line="348" lean-forward="true" selection-start-line="348" selection-end-line="348" />
-              <folding>
-                <element signature="e#15#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/automatic_query_score.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1438">
-              <caret line="396" column="59" selection-start-line="396" selection-start-column="59" selection-end-line="396" selection-end-column="59" />
+            <state relative-caret-position="44">
+              <caret line="412" lean-forward="true" selection-start-line="412" selection-end-line="412" />
               <folding>
                 <element signature="e#24#45#0" expanded="true" />
               </folding>
@@ -106,10 +97,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="251" />
-    <option name="y" value="37" />
-    <option name="width" value="1521" />
-    <option name="height" value="967" />
+    <option name="x" value="120" />
+    <option name="y" value="24" />
+    <option name="width" value="1667" />
+    <option name="height" value="981" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -133,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,6 +135,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,7 +145,13 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/verification_code_training_images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2000_model" />
+      <recent name="$PROJECT_DIR$/1000_model" />
+      <recent name="$PROJECT_DIR$/verification_code_training_images" />
       <recent name="$PROJECT_DIR$/95%" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -218,9 +215,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="251" y="37" width="1521" height="967" extended-state="0" />
+    <frame x="120" y="24" width="1667" height="981" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1663286" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -230,7 +228,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293011" />
-      <window_info anchor="bottom" id="运行" order="7" sideWeight="0.49924698" weight="0.13714285" />
+      <window_info anchor="bottom" id="运行" order="7" sideWeight="0.49924698" weight="0.3239595" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
@@ -254,114 +252,166 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_images/new3.jpg" />
-    <entry file="file://$PROJECT_DIR$/captcha/5ggt.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/1sfg.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/b6tx.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/duqo.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/it1l.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/msdw.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/tnz4.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/t8u2.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/tpnj.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/xhhm.png" />
-    <entry file="file://$PROJECT_DIR$/下载验证码图片.py" />
-    <entry file="file://$PROJECT_DIR$/captcha/1ju1.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/zart.png">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/1orn.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/captcha/0kv7.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/0ho4.png" />
-    <entry file="file://$PROJECT_DIR$/captcha/zih5.png">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/1pvh.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/captcha/zj5t.png">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/2k5x.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/captcha/zn7o.png">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/0bdk.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/img1.jpg" />
-    <entry file="file://$PROJECT_DIR$/image/img0.jpg" />
-    <entry file="file://$PROJECT_DIR$/image/img3.png" />
-    <entry file="file://$PROJECT_DIR$/image/img6.png" />
-    <entry file="file://$PROJECT_DIR$/image/img9.png" />
-    <entry file="file://$PROJECT_DIR$/image/img8.png" />
-    <entry file="file://$PROJECT_DIR$/image/img0.png" />
-    <entry file="file://$PROJECT_DIR$/image/img1.png" />
-    <entry file="file://$PROJECT_DIR$/image/img2.png" />
-    <entry file="file://$PROJECT_DIR$/image/img4.png" />
-    <entry file="file://$PROJECT_DIR$/image/img5.png" />
-    <entry file="file://$PROJECT_DIR$/image/img7.png" />
-    <entry file="file://$PROJECT_DIR$/image/0afp.png" />
-    <entry file="file://$PROJECT_DIR$/verification_code_training_images/0b8p.png">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/1pos.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/verification_code_training_images/0ho4.png">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/0rm4.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/verification_code_training_images/0bf8.png">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/1as4.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/verification_code_training_images/0bbu.png">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/ykpl.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/verification_code_training_images/0b0g.png">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/ylzh.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/verification_code_training_images/0a73.png">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/yxie.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/verification_code_training_images/0a00.png">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/z47n.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_images/new.PNG">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/z308.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/95%/checkpoint" />
-    <entry file="file://$PROJECT_DIR$/test_images/new1.PNG">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/zart.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_images/new2.PNG">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/zih5.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_images/new3.PNG">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/zj2o.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_images/new4.PNG">
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/zj5t.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/zn7o.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/8shp.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/9zvr.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/128l.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/ca4i.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/f3ve.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/gwz0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/ifb0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/l9ae.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/zh34.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/w948.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/xi49.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/vzam.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/v128.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/si69.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/rf5w.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/pj2k.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/pb8u.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_training_images/ng5c.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_images/2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/verification_code_images/6.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/verification_code_images/7.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verification_code_images/8.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/verification_code_images/9.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1067">
-          <caret line="348" lean-forward="true" selection-start-line="348" selection-end-line="348" />
-          <folding>
-            <element signature="e#15#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/1000_model/checkpoint">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_images/0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_images/1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verification_code_images/3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error_images/2mun.png" />
+    <entry file="file://$PROJECT_DIR$/error_images/42mk.png" />
+    <entry file="file://$PROJECT_DIR$/error_images/bmvz.png" />
+    <entry file="file://$PROJECT_DIR$/error_images/k3cr.png" />
+    <entry file="file://$PROJECT_DIR$/error_images/jli3.png" />
+    <entry file="file://$PROJECT_DIR$/error_images/mw1o.png" />
+    <entry file="file://$PROJECT_DIR$/error_images/t7i4.png" />
+    <entry file="file://$PROJECT_DIR$/2000_model/checkpoint">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/automatic_query_score.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1438">
-          <caret line="396" column="59" selection-start-line="396" selection-start-column="59" selection-end-line="396" selection-end-column="59" />
+        <state relative-caret-position="44">
+          <caret line="412" lean-forward="true" selection-start-line="412" selection-end-line="412" />
           <folding>
             <element signature="e#24#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
