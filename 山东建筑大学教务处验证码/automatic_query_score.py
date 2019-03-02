@@ -409,9 +409,6 @@ def captcha():
             first_time = False
 
 
-# captcha()
-
-
 def auto_download_train_images():
     output = crack_captcha_cnn()
     saver = tf.train.Saver()
@@ -452,8 +449,8 @@ def auto_download_train_images():
                 img.save(os.path.join('./error_images/', image_name.format(image_name=vec2name(vec))))
                 times2 = times2 + 1
             rate = times1/(times2+times1)
-            print("总次数:%s"%(times2+times1)+"正确率：%s"%rate)
+            print("总次数: % s" % (times2+times1)+"正确率：% s " % rate)
 
 
-# auto_download_train_images()
-
+# captcha()
+auto_download_train_images()
