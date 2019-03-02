@@ -452,5 +452,5 @@ def auto_download_train_images():
             print("总次数: % s" % (times2+times1)+"正确率：% s " % rate)
 
 
-# captcha()
+captcha()
 # auto_download_train_images()

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f03baeb-28d6-4f79-a432-94d207e4d4eb" name="默认的" comment="" />
+    <list default="true" id="7f03baeb-28d6-4f79-a432-94d207e4d4eb" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1000_model/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1000_model/crack_capcha.model-4500.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1000_model/crack_capcha.model-4500.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1000_model/crack_capcha.model-4500.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2000_model/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2000_model/crack_capcha.model-6300.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2000_model/crack_capcha.model-6300.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2000_model/crack_capcha.model-6300.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automatic_query_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/automatic_query_score.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/$.coverage" NAME="山东建筑大学教务处验证码 Coverage Results" MODIFIED="1551471789269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="山东建筑大学教务处验证码 Coverage Results" MODIFIED="1551521357532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -30,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/automatic_query_score.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3960">
-              <caret line="456" lean-forward="true" selection-start-line="456" selection-end-line="456" />
+            <state relative-caret-position="642">
+              <caret line="455" lean-forward="true" selection-start-line="455" selection-end-line="455" />
               <folding>
                 <element signature="e#24#45#0" expanded="true" />
               </folding>
@@ -62,9 +73,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="59" />
-    <option name="y" value="63" />
-    <option name="width" value="873" />
+    <option name="x" value="75" />
+    <option name="y" value="23" />
+    <option name="width" value="1345" />
     <option name="height" value="936" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -90,18 +101,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="山东建筑大学教务处验证码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="山东建筑大学教务处验证码" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,11 +175,12 @@
       <workItem from="1551469642322" duration="1129000" />
       <workItem from="1551470973964" duration="815000" />
       <workItem from="1551518196249" duration="181000" />
+      <workItem from="1551519237607" duration="1473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2393000" />
+    <option name="totallyTimeSpent" value="3866000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -190,15 +192,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="63" width="873" height="936" extended-state="0" />
+    <frame x="59" y="63" width="1345" height="936" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.42719615" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27858788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49907693" weight="0.4259887" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49907693" visible="true" weight="0.42535546" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -338,9 +340,7 @@
     <entry file="file://$PROJECT_DIR$/verification_code_images/9.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/1000_model/checkpoint">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/1000_model/checkpoint" />
     <entry file="file://$PROJECT_DIR$/verification_code_images/0.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -357,13 +357,11 @@
     <entry file="file://$PROJECT_DIR$/error_images/jli3.png" />
     <entry file="file://$PROJECT_DIR$/error_images/mw1o.png" />
     <entry file="file://$PROJECT_DIR$/error_images/t7i4.png" />
-    <entry file="file://$PROJECT_DIR$/2000_model/checkpoint">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2000_model/checkpoint" />
     <entry file="file://$PROJECT_DIR$/automatic_query_score.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3960">
-          <caret line="456" lean-forward="true" selection-start-line="456" selection-end-line="456" />
+        <state relative-caret-position="642">
+          <caret line="455" lean-forward="true" selection-start-line="455" selection-end-line="455" />
           <folding>
             <element signature="e#24#45#0" expanded="true" />
           </folding>
