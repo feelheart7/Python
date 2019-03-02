@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f03baeb-28d6-4f79-a432-94d207e4d4eb" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automatic_query_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/automatic_query_score.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_captcha/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/test_captcha/test.png" afterDir="false" />
-    </list>
+    <list default="true" id="7f03baeb-28d6-4f79-a432-94d207e4d4eb" name="默认的" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/automatic_query_score.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="456" selection-start-line="456" selection-end-line="456" />
+            <state relative-caret-position="3960">
+              <caret line="456" lean-forward="true" selection-start-line="456" selection-end-line="456" />
               <folding>
                 <element signature="e#24#45#0" expanded="true" />
               </folding>
@@ -94,7 +90,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,6 +101,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,11 +173,12 @@
       <workItem from="1551469596891" duration="25000" />
       <workItem from="1551469642322" duration="1129000" />
       <workItem from="1551470973964" duration="815000" />
+      <workItem from="1551518196249" duration="181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2212000" />
+    <option name="totallyTimeSpent" value="2393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -193,10 +190,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="977" extended-state="6" />
+    <frame x="59" y="63" width="873" height="936" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25452608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.42719615" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -365,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/automatic_query_score.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="456" selection-start-line="456" selection-end-line="456" />
+        <state relative-caret-position="3960">
+          <caret line="456" lean-forward="true" selection-start-line="456" selection-end-line="456" />
           <folding>
             <element signature="e#24#45#0" expanded="true" />
           </folding>

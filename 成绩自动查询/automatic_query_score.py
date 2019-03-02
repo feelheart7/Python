@@ -453,4 +453,4 @@ def auto_download_train_images():
 
 
 # captcha()
-auto_download_train_images()
+# auto_download_train_images()
