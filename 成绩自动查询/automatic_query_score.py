@@ -52,7 +52,7 @@ Y = tf.placeholder(tf.float32, [None, MAX_CAPTCHA*CHAR_SET_LEN])
 keep_prob = tf.placeholder(tf.float32)
 # 邮箱信息
 SENDER = '873773108@qq.com'
-PASSWORD = 'hoxspyfkwmqcbddd'
+PASSWORD = ''
 # 用户信息
 info = [{
         'account': '201611101122',
